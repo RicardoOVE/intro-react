@@ -1,34 +1,27 @@
 import React from "react";
 import FirstComponent from "./components/FirstComponent/FirstComponent";
+import FirstComponentFunctional from "./components/FirstComponentFunctional/FirstComponentFunctional";
 import PersonCard from "./components/PersonCard/PersonCard";
+import PersonCardFunctional from "./components/PersonCardFunctional/PersonCardFunctional";
 
 class App extends React.Component {
 
   render() {
-
     
     return(
 
       <div className="container">
-        <h1>Hello Dojo!</h1>
-        <h2>This I need to do:</h2>
-        <ul>
-          <li>Learn React</li>
-          <li>Climb Mt. Everest</li>
-          <li>Run a marathon</li>
-          <li>Feed the dogs</li>
-        </ul>
+
         <FirstComponent />
+        <FirstComponentFunctional></FirstComponentFunctional>
         <PersonCard firstName='Ricardo' lastName='Ortiz' age={27} city='Medellín'/>
         <br></br>
-        <PersonCard firstName='Juan' lastName='Ortiz' age={40} city='Medellín'/>
+        <PersonCard firstName='Juan' lastName='Velez' age={35} city='Delft'/>
         <br></br>
-        <PersonCard firstName='Federico' lastName='Ortiz' age={35} city='Delft'/>
+        <PersonCardFunctional firstName='Ricardo' lastName='Ortiz' age={30} city='Medellin'></PersonCardFunctional>
       </div>
     );
-    
   }
-
 }
 
 export default App;
